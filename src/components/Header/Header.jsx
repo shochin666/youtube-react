@@ -1,20 +1,22 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
+import { Box } from '@chakra-ui/layout'
+import { FormControl } from '@chakra-ui/form-control'
+import { Input } from '@chakra-ui/input'
+import { Button } from '@chakra-ui/button'
 
 
 export const Header = () => {
     return (
-        <div>
-            <div>
+        <Box>
+            <Box>
                 <Link to="/">VideoTube</Link>
-            </div>
+            </ Box>
             
-            <form>
-                <input type="text" placeholder="検索" />
-                <button type="submit"><FontAwesomeIcon icon={faSearch} /></button>
-            </form>
-        </div>
+            <FormControl id="search">
+                <Input type="text" placeholder="入力" />
+                <Button type="submit">検索</Button>
+            </FormControl>
+        </Box>
     )
 }
