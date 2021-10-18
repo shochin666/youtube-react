@@ -15,7 +15,7 @@ export const Header = () => {
             </Box>
             
             <FormControl id="search" display="flex" flex="2">
-                <Input type="text" placeholder="検索" textColor="white" width="50%" mt={1} height={8} />
+                <Input type="text" placeholder="検索" width="50%" mt={1} height={8} backgroundColor="white" />
                 <Button type="submit" backgroundColor="blackAlpha.600" width={20} mt={1} height={8}><SearchIcon color="white" /></Button>                
             </FormControl>
         </Box>
