@@ -15,7 +15,7 @@ const params = {
 }
 
 export const fetchPopularData = async() => {
-    return await youtube.get('videos', {
+    return await youtube.get('/videos', {
         params: {
             ...params,
             chart: 'mostPopular'
@@ -28,6 +28,15 @@ export const fetchSelectedData = async(id) => {
         params: {
             ...params,
             id
+        }
+    })
+}
+
+export const fetchRelatedData = async(id) => {
+    return await youtube.get('/search', {
+        params: {
+            ...params,
+            relatedToVideoId: id
         }
     })
 }

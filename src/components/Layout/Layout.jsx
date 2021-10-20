@@ -4,7 +4,7 @@ import { Header } from '../Header/Header'
 
 export const Layout = ({ children }) => {
     return (
-        <Box minHeight="100vh" backgroundColor="black">
+        <Box minHeight="100vh">
             <Flex>
                 <Header/>
                 <Box backgroundColor="white">
